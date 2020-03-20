@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+        body
+        {
+            background-color:#ec407a;
+        }
+		.container
+		{
+			padding-left: 70px;
+		}
+		img
+		{
+			height: 200px;
+			width: 200px;
+		}
+		header
+		{
+			border-style: solid;
+			font-size: 40px;
+			text-align: center;
+			background-color: #6a1b9a;
+		}
+		.he
+		{
+			color: #aeea00;
+			font-weight: bold;
+			font-family: Times New Roman;
+		}
+		.cfrr
+		{
+			background-position: center;
+		}
+		#aa,#bb,#cc,#dd,#ff,#gg,#hh,#ii
+		{
+			color: gold;
+			font-weight: bold;
+			font-size: 20px;
+			padding-top: 10px;
+		}
+		footer
+		{
+            left: 0;
+            bottom: 0;
+            width: 100%;
+			border-style: solid;
+			font-size: 20px;
+			background-color: #6a1b9a;
+        }
+        button
+        {
+            background-color: chartreuse;
+            border-color: chartreuse;
+            font-weight: bold;
+            font-size: 20px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+	</style>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script>
+		var cfr = 0,pfr = 0,mfr = 0,sd = 0,bg = 0,sp = 0,ff = 0,ju = 0;
+		function q()
+		{
+			cfr = cfr + 1;
+		document.getElementById("aa").innerHTML = cfr;	
+		}
+		function qq()
+		{
+			cfr = cfr - 1;
+			if(cfr < 0)
+		{
+			cfr = cfr +1;
+			document.getElementById("aa").innerHTML = cfr;}
+		else
+			{document.getElementById("aa").innerHTML = cfr;}
+		}
+		function w()
+		{
+			mfr = mfr + 1;
+		document.getElementById("bb").innerHTML = mfr;	
+		}
+		function ww()
+		{
+			mfr = mfr - 1;
+			if (mfr < 0) {
+				mfr = mfr + 1;
+				document.getElementById("bb").innerHTML = mfr;}
+		else
+			{document.getElementById("bb").innerHTML = mfr;}	
+		}
+		function e()
+		{
+			pfr = pfr + 1;
+		document.getElementById("cc").innerHTML = pfr;	
+		}
+		function ee()
+		{
+			pfr = pfr - 1;
+			if(pfr < 0)
+		{
+			pfr = pfr +1;
+			document.getElementById("cc").innerHTML = pfr;}
+			else
+			{document.getElementById("cc").innerHTML = pfr;}	
+		}
+		function r()
+		{
+			sd = sd + 1;
+		document.getElementById("dd").innerHTML = sd;	
+		}
+		function rr()
+		{
+			sd = sd - 1;
+			if(sd < 0)
+			{
+				sd =sd + 1;
+				document.getElementById("dd").innerHTML = sd;
+			}
+			else
+			{document.getElementById("dd").innerHTML = sd;}
+		}
+		function t()
+		{
+			bg = bg + 1;
+		document.getElementById("ff").innerHTML = bg;	
+		}
+		function tt()
+		{
+			bg = bg - 1;
+			if(bg < 0)
+			{
+				bg = bg + 1;
+				document.getElementById("ff").innerHTML = bg;
+			}
+		else
+			{document.getElementById("ff").innerHTML = bg;}	
+		}
+		function y()
+		{
+			sp = sp + 1;
+		document.getElementById("gg").innerHTML = sp;	
+		}
+		function yy()
+		{
+			sp = sp - 1;
+			if(sp < 0)
+		{
+			sp = sp + 1;
+			document.getElementById("gg").innerHTML = sp;}
+		else
+			{document.getElementById("gg").innerHTML = sp;}
+		}
+		function z()
+		{
+			ff = ff + 1;
+		document.getElementById("hh").innerHTML = ff;	
+		}
+		function zz()
+		{
+			ff = ff - 1;
+			if(ff < 0)
+			{
+				ff = ff + 1;
+				document.getElementById("hh").innerHTML = ff;
+			}
+		else
+			{document.getElementById("hh").innerHTML = ff;}	
+		}
+		function x()
+		{
+			ju = ju + 1;
+		document.getElementById("ii").innerHTML = ju;	
+		}
+		function xx()
+		{
+			ju = ju - 1;
+			if(ju < 0)
+			{
+				ju = ju + 1;
+				document.getElementById("ii").innerHTML = ju;
+			}
+		else
+			{document.getElementById("ii").innerHTML = ju;}	
+		}
+		function ch()
+		{
+			sessionStorage.setItem("cfr", cfr);
+			sessionStorage.setItem("mfr", mfr);
+			sessionStorage.setItem("pfr", pfr);
+			sessionStorage.setItem("sd", sd);
+			sessionStorage.setItem("bg", bg);
+			sessionStorage.setItem("sp", sp);
+			sessionStorage.setItem("ff", ff);
+			sessionStorage.setItem("ju", ju);
+		}
+	</script>
+</head>
+<body>
+<header><div class="he"><i class="fas fa-cloud" style="font-size:40px;color:#e65100;"></i> Sathyabama Canteen</div></header>
+<div class="container">
+<div class="row" style="padding-top: 40px;">
+<div class="col-md-3">
+<img src="cfr.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Chicken fried rice = Rs 100</div><div><button onclick="q()">+</button><p id="aa">0</p><button onclick="qq()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="mfr.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Mushroom fried rice = Rs 90</div><div><button onclick="w()">+</button><p id="bb">0</p><button onclick="ww()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="pfr.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Paneer fried rice = Rs 90 </div><div><button onclick="e()">+</button><p id="cc">0</p><button onclick="ee()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="sw.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Sandwich = Rs 70</div><div><button onclick="r()">+</button><p id="dd">0</p><button onclick="rr()">-</button></div>
+</div></div>
+<div class="row" style="padding-top: 40px;">
+<div class="col-md-3">
+<img src="bg.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Burger = Rs 100</div><div><button onclick="t()">+</button><p id="ff">0</p><button onclick="tt()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="sp.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Soup = Rs 60</div><div><button onclick="y()">+</button><p id="gg">0</p><button onclick="yy()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="ff.png"> 
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">French Fries = Rs 50</div><div><button onclick="z()">+</button><p id="hh">0</p><button onclick="zz()">-</button></div>
+</div>
+<div class="col-md-3">
+<img src="cc.png">
+<div style="text-align: left; font-weight: bold; color: gold; font-size: 18px;">Juice = Rs 40</div><div><button onclick="x()">+</button><p id="ii">0</p><button onclick="xx()">-</button></div>
+</div>
+</div></div>
+<div style="padding-top: 40px; text-align: center;">
+<button onclick="ch()" style="padding: 20px 100px;"><a href="Checkout.html">CHECKOUT</a></button><p id="cg"></p>
+</div>
+<footer><div style="text-align: center; font-weight: bolder; color: greenyellow;">Copyright:- Sathyabama Institute of Science and Technology </div></footer>
+</body>
+</html>
